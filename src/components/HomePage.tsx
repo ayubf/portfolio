@@ -21,7 +21,6 @@ const HomePage = () => {
       loadContent()
     }, [])
   
-    console.log(postData);
 
     return (
       <div className='indexDiv'>
