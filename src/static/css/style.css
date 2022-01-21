@@ -1,0 +1,105 @@
+@import url('fonts.css');
+
+body { 
+    padding: 50px;
+    max-width: 1000px;
+    margin:0 auto; 
+    font-family: "OpenSans-Regular";
+}
+
+h1 {
+    font-size: 75px;
+}
+
+
+
+a, a:visited {
+    color: blue;
+    text-decoration: none;
+
+}
+
+#nameLink {
+    font-size: large;
+    padding-right: 710px;
+}
+
+#title {
+    font-size: 100px;
+}
+
+
+
+#devStatement {
+    display: inline-block;
+}
+
+
+#devDiv {
+    display: inline-block;
+    font-size: 50px; 
+}
+
+.footerDiv {
+    padding-top: 25px; 
+    font-family: "UbuntuMono-Regular";
+    text-align: center;
+}
+
+.headerDiv {
+    text-align: center;
+}
+
+.shortBio {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.indexDiv {
+    display: inline-block;
+}
+
+.projectDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding-bottom: 75px;
+    width: 1000px;
+}
+
+.projectPageDiv {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.postDiv {
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px outset aliceblue;
+    
+}
+
+.Card {
+    width: 250px;
+    height: 200px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+  }
+  
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+.projIamge {
+    width: 100%;
+}
