@@ -41,7 +41,7 @@ const HomePage = () => {
                         projData.map(({miniText, technologies, title, titleURL}) => {
                             return (
                                 <div className="card" key={title}>
-                                    <img className='projImage' src={`https://ayubfarah.herokuapp.com/images/${titleURL}.png`} alt={titleURL} height="200px"/>
+                                    <img className='projImage' src={`https://ayubfarah.herokuapp.com/resources/${titleURL}.png`} alt={titleURL} height="200px"/>
                                     <p> <b>{title}</b>: {miniText} </p>
                                     <p>
                                         {technologies}
@@ -81,7 +81,8 @@ const HomePage = () => {
                 <p>
                     Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
                 </p>
-                <a href='mailto:ayubaf04@gmail.com'>Email</a>
+                <a href='mailto:ayubaf04@gmail.com'>Email</a> <br />
+                <a href="https://ayubfarah.herokuapp.com/CV_AF.pdf" download>Resume</a>
             </div>
       </div>
     );
