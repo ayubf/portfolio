@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     const loadContent = async () => {
-      await fetch("https://ayubfarah.herokuapp.com/posts", {
+      await fetch("https://ayubfarah.herokuapp.com/posts/", {
         method: "GET",
         headers : {
           "Content-type": "application/json"

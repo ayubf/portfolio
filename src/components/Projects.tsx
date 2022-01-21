@@ -29,7 +29,7 @@ const Projects = () => {
                         projData.map(({miniText, technologies, title, titleURL}) => {
                             return (
                                 <div className="card" key={title}>
-                                    <img className='projImage' src={`http://ayubfarah.herokuapp.com/images/${titleURL}.png`} alt={titleURL} height="200px"/>
+                                    <img className='projImage' src={`https://ayubfarah.herokuapp.com/images/${titleURL}.png`} alt={titleURL} height="200px"/>
                                     <p> <b>{title}</b>: {miniText} </p>
                                     <p>
                                         {technologies}
