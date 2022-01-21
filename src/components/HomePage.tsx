@@ -34,12 +34,6 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className='shortBio'>
-                <p>
-                    I love to solve problems and enjoy learning new things every day. I spend hours daily learning, practicing and surpassing my limits, pushing ahead and polishing my skills.
-                </p>
-            </div>
-
             <div>
                 <h2>Check out some of my projects</h2>
                 <div className="projectDiv">
