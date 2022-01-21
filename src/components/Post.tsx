@@ -14,14 +14,13 @@ const Post = (title: any) => {
 
     let [postData, setPostData] = useState<PostInterface>()
 
-
     useEffect(() => {
 
         const loadPost = async () => {
-            await fetch("https://ayubfarah.herokuapp.com/posts/"+title.title, {
+            await fetch(`https://ayubfarah.herokuapp.com/posts/${title.title}`, {
                 method: "GET",
                 headers: {
-                    "Content-type": "application.json"
+                    "Content-type": "application/json"
                 }
             })
             .then(res => res.json())

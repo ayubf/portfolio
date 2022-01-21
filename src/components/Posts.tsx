@@ -30,7 +30,7 @@ const Posts = () => {
     
                         return (
                             <div className="postDiv" key={titleURL}>
-                                <a href={"/posts/"+title} >{title}</a>
+                                <a href={"/posts/"+titleURL} >{title}</a>
                                 <p>
 
                                     {
