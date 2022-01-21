@@ -6,7 +6,7 @@ const Projects = () => {
 
     useEffect(() => {
         const loadProjects = async () => {
-            await fetch('http://ayubfarah.herokuapp.com/projects/', {
+            await fetch('https://ayubfarah.herokuapp.com/projects/', {
                 method: "GET",
                 headers: {
                     'Content-type': "application/js"

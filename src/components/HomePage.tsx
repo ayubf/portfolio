@@ -8,7 +8,7 @@ const HomePage = () => {
   
     useEffect(() => {
       const loadContent = async () => {
-        await fetch("http://ayubfarah.herokuapp.com/", {
+        await fetch("https://ayubfarah.herokuapp.com/", {
           method: "GET",
           headers : {
             "Content-type": "application/json"
