@@ -93,11 +93,10 @@ a, a:visited {
     padding: 0px 100px 200px 0px;
   }
   
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+
+.container {
+padding: 2px 16px;
+}
 
 .projIamge {
     width: 100%;
