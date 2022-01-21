@@ -44,7 +44,7 @@ const App = () => {
           {
               postData.map(({titleURL}) => {
                 return (
-                  <Route path={"/posts/"+titleURL} key={titleURL} element={<Post title={titleURL} />} />
+                  <Route path={"/posts/"+titleURL+"/"} key={titleURL} element={<Post title={titleURL} />} />
                 )
               })
           }
