@@ -82,7 +82,7 @@ const HomePage = () => {
                     Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
                 </p>
                 <a href='mailto:ayubaf04@gmail.com'>Email</a> <br />
-                <a href="https://ayubfarah.herokuapp.com/CV_AF.pdf" download>Resume</a>
+                <a href="https://ayubfarah.herokuapp.com/resources/CV_AF.pdf" download>Resume</a>
             </div>
       </div>
     );
