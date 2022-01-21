@@ -67,7 +67,7 @@ const HomePage = () => {
                     postData.map(({title, body, date, views, titleURL}) => {
                         return (
                             <div className="postDiv" key={titleURL}>
-                                <a href="/" >{title}</a>
+                                <a href={"/posts/"+titleURL} >{title}</a>
                                 <p>
 
                                     {
