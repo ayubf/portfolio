@@ -1,9 +1,24 @@
 import {useState, useEffect} from 'react';
-import moment from 'moment';
 
 
 const HomePage = () => {
-    let [postData, setPostData] = useState([]);
+
+
+    const tech = {
+        "flask" : <img alt="flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="48" width="48"/>,
+        "react" : <img alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="48" width="48" />,
+        "javascript": <img alt="javaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" width="48"/>,
+        "typescript": <img alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="48" width="48" />,
+        "electron": <img alt="electron" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="48" width="48"/>,
+        "express": <img alt="express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="48" width="48"/>,
+        "python": <img alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="48" width="48"/>,
+        "ruby": <img alt="ruby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" height="48" width="48"/>,
+        "rails": <img alt="rails" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" height="48" width="48"/>,
+        "mongodb": <img alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="48" width="48" />,
+        "postgres": <img alt="posgtres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="48" width="48"/>
+
+    }
+
     let [projData, setprojData] = useState([]);
   
     useEffect(() => {
@@ -15,7 +30,7 @@ const HomePage = () => {
           }
         })
         .then(res => res.json())
-        .then(data => {setPostData(data['postData']); setprojData(data['projData'])})
+        .then(data => {setprojData(data['projData'])})
       }
   
       loadContent()
@@ -25,26 +40,21 @@ const HomePage = () => {
     return (
       <div className='indexDiv'>
             <div> 
-                <h1 id='title'>Hi, I'm Ayub </h1>
+                <h1 id='title'>Hi, I'm Ayub! </h1>
                 <h3 id='devDiv' >  I'm a developer </h3>
-                <div>
-                        <img alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="64" width="64"/>
-                        <img alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="64" width="64"/>
-                        <img alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="64" width="64"/>
-                </div>
             </div>
 
             <div>
-                <h2>Check out some of my projects</h2>
+                <h2>Check out some of my projects...</h2>
                 <div className="projectDiv">
                     {
-                        projData.map(({miniText, technologies, title, titleURL}) => {
+                        projData.map(({miniText, summary, title, titleURL, technologies}) => {
                             return (
                                 <div className="card" key={title}>
-                                    <img className='projImage' src={`https://ayubfarah.herokuapp.com/resources/${titleURL}.png`} alt={titleURL} height="200px"/>
+                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})}
                                     <p> <b>{title}</b>: {miniText} </p>
                                     <p>
-                                        {technologies}
+                                        {summary}
                                     </p>
                                     <a href={`http://github.com/ayubf/${titleURL}`}>Learn more...</a>
                                 </div>
@@ -54,35 +64,14 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div>
-                <h2>Some of my recent posts</h2>
-                {
-                    postData.map(({title, body, date, views, titleURL}) => {
-                        return (
-                            <div className="postDiv" key={titleURL}>
-                                <a href={"/posts/"+titleURL} >{title}</a>
-                                <p>
-
-                                    {
-                                        (body as string).split(" ").slice(0, 20).join(" ")
-                                    }
-
-                                </p>
-                                <p>Date: {moment(date['$date']).utc().format('MM/DD/YYYY')} </p>
-                                <p>Views: {views}</p>
-                            </div> 
-                        )
-                    })
-                }
-            </div>
-
+        
             <div className='contactDiv'>
                 <h2>Contact me</h2>
                 <p>
                     Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
                 </p>
-                <a href='mailto:ayubaf04@gmail.com'>Email</a> <br />
-                <a href="https://ayubfarah.herokuapp.com/resources/CV_AF.pdf" download>Resume</a>
+                <h4><a href='mailto:ayubaf04@gmail.com'>Email</a> <br /></h4>
+                <h4><a href="https://ayubfarah.herokuapp.com/resources/CV_AF.pdf" download>Resume</a></h4>
             </div>
       </div>
     );
@@ -90,4 +79,3 @@ const HomePage = () => {
 
 export default HomePage
 
-// const formattedDate = moment(dateFromDB).utc().format('DD/MM/YY')
