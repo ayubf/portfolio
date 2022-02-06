@@ -51,11 +51,11 @@ const HomePage = () => {
                         projData.map(({miniText, summary, title, titleURL, technologies}) => {
                             return (
                                 <div className="card" key={title}>
-                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})}
                                     <p> <b>{title}</b>: {miniText} </p>
                                     <p>
                                         {summary}
                                     </p>
+                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})} <br />
                                     <a href={`http://github.com/ayubf/${titleURL}`}>Learn more...</a>
                                 </div>
                             )
