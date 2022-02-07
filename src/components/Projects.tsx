@@ -50,7 +50,7 @@ const Projects = () => {
                                     <p>
                                         {summary}
                                     </p>
-                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})}
+                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})} <br />
                                     <a href={`http://github.com/ayubf/${titleURL}`}>Learn more...</a>
                                 </div>
                             )
