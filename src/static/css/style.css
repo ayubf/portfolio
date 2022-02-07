@@ -63,7 +63,6 @@ a, a:visited {
 }
 
 .projectPageDiv {
-    padding: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -83,9 +82,10 @@ a, a:visited {
 }
 
 .card {
+    font-size: 20px;
     width: 300px;
     height: 200px;
-    padding: 100px 100px 75px 0px;
+    padding: 75px 75px 50px 0px;
   }
   
 
