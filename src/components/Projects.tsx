@@ -46,12 +46,11 @@ const Projects = () => {
                         projData.map(({miniText, summary, title, titleURL, technologies}) => {
                             return (
                                 <div className="card" key={title}>
-                                    {/* <img className='projImage' src={`https://ayubfarah.herokuapp.com/resources/${titleURL}.png`} alt={titleURL} height="200px"/> */}
-                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})}
                                     <p> <b>{title}</b>: {miniText} </p>
                                     <p>
                                         {summary}
                                     </p>
+                                    {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})}
                                     <a href={`http://github.com/ayubf/${titleURL}`}>Learn more...</a>
                                 </div>
                             )
