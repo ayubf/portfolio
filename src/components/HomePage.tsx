@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-target-blank */
 import {useState, useEffect} from 'react';
-
+import Pdf from '../static/CV_AF.pdf';
 
 const HomePage = () => {
 
@@ -36,6 +37,8 @@ const HomePage = () => {
   
       loadContent()
     }, [])
+
+    console.log(projData.length === 0)
   
 
     return (
@@ -45,7 +48,7 @@ const HomePage = () => {
                 <h3 id='devDiv' >  I'm a developer </h3>
             </div>
 
-            <div>
+           {projData.length !== 0 &&  <div>
                 <h2>Check out some of my projects...</h2>
                 <div className="projectDiv">
                     {
@@ -63,7 +66,7 @@ const HomePage = () => {
                         })
                     }
                 </div>
-            </div>
+            </div>}
 
         
             <div className='contactDiv'>
@@ -72,7 +75,7 @@ const HomePage = () => {
                     Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
                 </p>
                 <h4><a href='mailto:ayubaf04@gmail.com'>Email</a> <br /></h4>
-                <h4><a href="https://ayubfarah.herokuapp.com/resources/CV_AF.pdf" download>Resume</a></h4>
+                <h4><a href={Pdf} target="_blank">Resume</a></h4>
             </div>
       </div>
     );
