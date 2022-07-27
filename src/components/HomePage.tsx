@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-target-blank */
-import {useState, useEffect} from 'react';
 import Pdf from '../static/CV_AF.pdf';
 
 const HomePage = () => {
@@ -21,24 +20,30 @@ const HomePage = () => {
 
     }
 
-    let [projData, setprojData] = useState([]);
-  
-    useEffect(() => {
-      const loadContent = async () => {
-        await fetch("https://ayubfarah.herokuapp.com/", {
-          method: "GET",
-          headers : {
-            "Content-type": "application/json"
-          }
-        })
-        .then(res => res.json())
-        .then(data => {setprojData(data['projData'])})
-      }
-  
-      loadContent()
-    }, [])
 
-    console.log(projData.length === 0)
+
+    let projData = [
+        {
+            "title": "Wink",
+            "miniText": "Full-stack social web app",
+            "summary": "Written in TypeScript, using React & Express",
+            "technologies": "typescript react express mongodb".split(' ')
+        },
+        {
+            "title": "Qwill",
+            "miniText": "Social networking site frontend",
+            "summary": "Written in JavaScript, using React",
+            "technologies": "javascript react".split(' ')
+        },
+        {
+            "title": "2Do",
+            "miniText": "To-do List Maker",
+            "summary": "Written in Javascript, using Electron",
+            "technologies": "javascript electron".split(' ')
+            
+        },
+
+    ]
   
 
     return (
@@ -52,7 +57,7 @@ const HomePage = () => {
                 <h2>Check out some of my projects...</h2>
                 <div className="projectDiv">
                     {
-                        projData.map(({miniText, summary, title, titleURL, technologies}) => {
+                        projData.map(({miniText, summary, title, technologies}) => {
                             return (
                                 <div className="card" key={title}>
                                     <p> <b>{title}</b>: {miniText} </p>
@@ -60,7 +65,7 @@ const HomePage = () => {
                                         {summary}
                                     </p>
                                     {(technologies as Array<string>).map((i: string) => {return tech[i as keyof Object]})} <br />
-                                    <a href={`http://github.com/ayubf/${titleURL}`}>Learn more...</a>
+                                    <a href={`http://github.com/ayubf/${title.toLowerCase().replace(' ', '-')}`}>Learn more...</a>
                                 </div>
                             )
                         })
@@ -70,13 +75,19 @@ const HomePage = () => {
 
         
             <div className='contactDiv'>
-                <h2>Contact me</h2>
+                <h2> <a href="mailto:ayubaf04@gmail.com">Contact Me</a></h2>
                 <p>
                     Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
                 </p>
-                <h4><a href='mailto:ayubaf04@gmail.com'>Email</a> <br /></h4>
-                <h4><a href={Pdf} target="_blank">Resume</a></h4>
             </div>
+
+            <div className='footerDiv'>
+                <p>Designed and built by Ayub Farah, 2021</p>
+                <p>Written in Python & TypeScript, using Flask & React</p>
+                <div>
+                    <a href="https://github.com/ayubf">Github</a> • <a href="https://www.linkedin.com/in/ayub-farah-15b278217/">Linkedin</a> • <a href="https://dev.to/ayubf">DEV</a> • <a href={Pdf} target="_blank">Resume</a>
+            </div>
+	</div>
       </div>
     );
 }
