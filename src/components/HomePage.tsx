@@ -85,8 +85,9 @@ const HomePage = () => {
                 <p>Written in TypeScript with React</p>
                 <div>
                     <a href="https://github.com/ayubf">Github</a> • <a href="https://www.linkedin.com/in/ayub-farah-15b278217/">Linkedin</a> • <a href="https://dev.to/ayubf">DEV</a> • <a href={Pdf} target="_blank">Resume</a>
-            </div>
-	</div>
+                </div>
+                <img src={Png} alt="Ayub Farah" height={75} width={150} />
+	        </div>
       </div>
     );
 }
