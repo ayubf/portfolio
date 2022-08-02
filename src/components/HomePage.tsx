@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Pdf from '../static/CV_AF.pdf';
+import Png from '../static/banner.png';
 
 const HomePage = () => {
 
@@ -47,6 +48,7 @@ const HomePage = () => {
     return (
       <div className='indexDiv'>
             <div> 
+                <a href={Png}>Banner here</a>
                 <h1 id='title'>Hi, I'm Ayub! </h1>
                 <h3 id='devDiv' >  I'm a developer </h3>
             </div>
