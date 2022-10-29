@@ -76,7 +76,7 @@ const HomePage = () => {
             <div className='contactDiv'>
                 <h2> <a href="mailto:ayubaf04@gmail.com">Contact Me</a></h2>
                 <p>
-                    Don't hesitate to contact me if you want to discuss programming, Python libraries, JavaScript frameworks, or have any internship offers, advice or critique.
+                    Don't hesitate to contact me if you have anything to tell me
                 </p>
             </div>
 
