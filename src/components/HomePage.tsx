@@ -13,8 +13,13 @@ const HomePage = () => {
         toggleDark(localStorage.getItem("dark") === 'true')
       }, [])
 
+    const toDark = () => {
+        toggleDark(!dark); 
+        localStorage.setItem("dark", (!dark).toString());
+        document.body.style.setProperty("background-color", dark ? "white": "#000005")
+    }
+
     let style = {
-        backgroundColor: dark ? "#000005": "white",
         color: dark ? "white": "black",
     }
     
@@ -73,7 +78,7 @@ const HomePage = () => {
             <div> 
                 <div>
                     <h1 style={{display: "inline-block"}}id='title'>Hi, I'm Ayub! </h1> 
-                    <img alt="Dark Mode Toggle Icon" style={dark ? buttonStyle : {}} src={dark ? SunIcon : MoonIcon} onClick={() => {toggleDark(!dark); localStorage.setItem("dark", (!dark).toString())}} height={50} width={50}/>
+                    <img alt="Dark Mode Toggle Icon" style={dark ? buttonStyle : {}} src={dark ? SunIcon : MoonIcon} onClick={toDark} height={50} width={50}/>
                 </div>
                 <h3 id='devDiv' >  I'm a developer </h3>
             </div>
