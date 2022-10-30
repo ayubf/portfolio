@@ -1,9 +1,31 @@
 /* eslint-disable react/jsx-no-target-blank */
+import {useState, useEffect} from 'react';
+
 import Pdf from '../static/CV_AF.pdf';
-import Png from '../static/banner.png';
+import MoonIcon from '../static/images/moon-fill.svg';
+import SunIcon from '../static/images/sun.svg';
 
 const HomePage = () => {
 
+    let [dark, toggleDark] = useState(false);
+
+    useEffect(() => {
+        toggleDark(localStorage.getItem("dark") === 'true')
+      }, [])
+
+    let style = {
+        backgroundColor: dark ? "#000005": "white",
+        color: dark ? "white": "black",
+    }
+    
+    let iconStyle = {
+        filter: "invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%)"
+    }
+
+    let buttonStyle = {
+        filter: "invert(100%) sepia(1%) saturate(7478%) hue-rotate(328deg) brightness(105%) contrast(111%)",
+
+    }
 
     const tech = {
         "flask" : <img alt="flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="48" width="48"/>,
@@ -11,7 +33,7 @@ const HomePage = () => {
         "javascript": <img alt="javaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" width="48"/>,
         "typescript": <img alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="48" width="48" />,
         "electron": <img alt="electron" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="48" width="48"/>,
-        "express": <img alt="express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="48" width="48"/>,
+        "express": <img style={dark ? iconStyle : {}} alt="express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="48" width="48"/>,
         "python": <img alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="48" width="48"/>,
         "ruby": <img alt="ruby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" height="48" width="48"/>,
         "rails": <img alt="rails" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" height="48" width="48"/>,
@@ -46,9 +68,13 @@ const HomePage = () => {
   
 
     return (
-      <div className='indexDiv'>
+      <div style={style} className='indexDiv'>
+        <div className="wrapper">
             <div> 
-                <h1 id='title'>Hi, I'm Ayub! </h1>
+                <div>
+                    <h1 style={{display: "inline-block"}}id='title'>Hi, I'm Ayub! </h1> 
+                    <img style={dark ? buttonStyle : {}} src={dark ? SunIcon : MoonIcon} onClick={() => {toggleDark(!dark); localStorage.setItem("dark", (!dark).toString())}} height={50} width={50}/>
+                </div>
                 <h3 id='devDiv' >  I'm a developer </h3>
             </div>
 
@@ -72,22 +98,19 @@ const HomePage = () => {
                 </div>
             </div>}
 
-        
-            <div className='contactDiv'>
-                <h2> <a href="mailto:ayubaf04@gmail.com">Contact Me</a></h2>
-                <p>
-                    Don't hesitate to contact me if you have anything to tell me
-                </p>
+            <div>
+                <h2>About Me</h2>
+                <p>I'm a freshman at the University of Houston pursuing a Bachelors of Science in Computer Science. I started programming as a kid and fell in love with the process of creating new things and the challenges along the way. I have a keen interest in solving problems with intuitive solutions.</p>
             </div>
-
+            
             <div className='footerDiv'>
                 <p>Designed and built by Ayub Farah, 2021</p>
                 <p>Written in TypeScript with React</p>
                 <div>
                     <a href="https://github.com/ayubf">Github</a> • <a href="https://www.linkedin.com/in/ayub-farah-15b278217/">Linkedin</a> • <a href="https://dev.to/ayubf">DEV</a> • <a href={Pdf} target="_blank">Resume</a>
                 </div>
-                <img src={Png} alt="Ayub Farah" height={75} width={150} />
 	        </div>
+        </div>
       </div>
     );
 }
