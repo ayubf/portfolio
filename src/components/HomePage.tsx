@@ -73,7 +73,7 @@ const HomePage = () => {
             <div> 
                 <div>
                     <h1 style={{display: "inline-block"}}id='title'>Hi, I'm Ayub! </h1> 
-                    <img style={dark ? buttonStyle : {}} src={dark ? SunIcon : MoonIcon} onClick={() => {toggleDark(!dark); localStorage.setItem("dark", (!dark).toString())}} height={50} width={50}/>
+                    <img alt="Dark Mode Toggle Icon" style={dark ? buttonStyle : {}} src={dark ? SunIcon : MoonIcon} onClick={() => {toggleDark(!dark); localStorage.setItem("dark", (!dark).toString())}} height={50} width={50}/>
                 </div>
                 <h3 id='devDiv' >  I'm a developer </h3>
             </div>
