@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-target-blank */
-import {useState, useEffect} from 'react';
 
 import Pdf from '../static/CV_AF.pdf';
 import Banner from '../static/images/banner.png';
