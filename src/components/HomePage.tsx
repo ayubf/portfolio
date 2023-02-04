@@ -77,7 +77,7 @@ const HomePage = () => {
 
             <div>
                 <h2>About Me</h2>
-                <p>I'm a freshman at the University of Houston pursuing a Bachelors of Science in Computer Science. I started programming as a kid and fell in love with the process of creating new things and the challenges along the way. I have a keen interest in solving problems with intuitive solutions.</p>
+                <p>I'm a student at the University of Houston pursuing a Bachelors of Science in Computer Science. I started programming as a kid and fell in love with the process of creating new things and solving challenges along the way. I have a keen interest in solving problems with intuitive solutions.</p>
             </div>
             
             <div className='footerDiv'>
