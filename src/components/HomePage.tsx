@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 
-import Pdf from '../static/CV_AF.pdf';
 import Banner from '../static/images/banner.png';
 
 const HomePage = () => {
@@ -84,7 +83,7 @@ const HomePage = () => {
                 <p>Designed and built by Ayub Farah, 2021</p>
                 <p>Written in TypeScript with React</p>
                 <div>
-                    <a href="https://github.com/ayubf">Github</a> • <a href="https://www.linkedin.com/in/ayub-farah-15b278217/">Linkedin</a> • <a href="https://dev.to/ayubf">DEV</a> • <a href={Pdf} target="_blank">Resume</a>
+                    <a href="https://github.com/ayubf">Github</a> • <a href="https://www.linkedin.com/in/ayubfarah/">Linkedin</a> • <a href="https://dev.to/ayubf">DEV</a> • <a href="https://www.linkedin.com/in/ayubfarah/details/featured/1635545538737/single-media-viewer/?profileId=ACoAADattdcB-DnVRMNEAL8tsPIKBU4clqBZjio" target="_blank">Resume</a>
                 </div>
                 <img src={Banner} width={300} height={150} alt="banner" />
 	        </div>
