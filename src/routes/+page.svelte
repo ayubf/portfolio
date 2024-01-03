@@ -27,6 +27,12 @@
         color: rgb(98, 98, 240);
     }
 
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80vw;
+        }
+    }
+
 </style>
 
 
