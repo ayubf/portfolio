@@ -46,8 +46,7 @@
         <div>
             <h2>I. About</h2>
             <p>
-                &emsp; My name is Ayub Farah. I'm currently a pursuing a Bachelors in Computer Science
-                at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
+                &emsp; My name is Ayub Farah. I'm currently pursuing a Bachelor in Computer Science at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
             </p>
             <ul>
                 <li>Web Development</li>
