@@ -57,6 +57,8 @@
                 <li>Geometry</li>
                 <li>Optimization</li>
             </ul>
+            <p>
+                &emsp; I am passionate about bridging theoretical knowledge with practical applications and am currently seeking opportunities in research and engineering roles. 
         </div>
         <div>
             <h2>II. Experience</h2>
