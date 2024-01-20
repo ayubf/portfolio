@@ -40,13 +40,18 @@
 
     <div class="container">
         <div>
-            <h1>Ayub Farah</h1>
+            <h1>Ayub Farah</h1> 
+            <div>
+                <a href="https://docs.google.com/document/d/1s_ZSxTAYZjTrnart0uc524cu6R3ECRraFxKcMJL7nCw">Resume</a> - 
+                <a href="https://linkedin.com/in/ayubfarah">Linkedin</a> - 
+                <a href="mailto:ayubaf04@gmail.com">Email</a> 
+            </div>
             <hr>
         </div>
         <div>
             <h2>I. About</h2>
             <p>
-                &emsp; My name is Ayub Farah. I'm currently pursuing a Bachelor in Computer Science at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
+                &emsp; My name is Ayub Farah. I'm currently pursuing a B.S. in Computer Science at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
             </p>
             <ul>
                 <li>Web Development</li>
@@ -94,14 +99,6 @@
                 <li><a href="https://github.com/ayubf/wink">Wink</a>: Full-stack social media webapp.</li>
             </ul>
             <p>More on my <a href="https://github.com/ayubf">Github profile.</a></p>
-        </div>
-        <div>
-            <h2>IV. Contact</h2>
-            <ul>
-                <li><a href="https://docs.google.com/document/d/1s_ZSxTAYZjTrnart0uc524cu6R3ECRraFxKcMJL7nCw">Resume</a></li>
-                <li><a href="https://linkedin.com/in/ayubfarah">Linkedin</a></li> 
-                <li><a href="mailto:ayubaf04@gmail.com">Email</a></li>
-            </ul>
         </div>
     </div>
 
