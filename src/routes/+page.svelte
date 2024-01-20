@@ -90,7 +90,6 @@
         <div>
             <h2>III. Projects</h2>
             <ul>
-                <li><a href="https://github.com/ayubf/Swish-Analytics">Swish Analytics</a>: A Deep Dive Into NBA Statistics</li>
                 <li><a href="https://github.com/ayubf/turms">Turms</a>: An instant messaging service using the WebSocket API.</li>
                 <li><a href="https://github.com/ayubf/wink">Wink</a>: Full-stack social media webapp.</li>
             </ul>
