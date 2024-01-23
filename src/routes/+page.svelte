@@ -58,8 +58,6 @@
                 <li>Linear Algebra</li>
                 <li>Machine Learning</li>
                 <li>Data Science</li>
-                <li>Geometry</li>
-                <li>Optimization</li>
             </ul>
             <p>
                 &emsp; I am passionate about bridging theoretical knowledge with practical applications and am currently seeking opportunities in research and engineering roles. 
