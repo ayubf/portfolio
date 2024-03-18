@@ -33,6 +33,14 @@
         }
     }
 
+    .h1 {
+        font-size: 50px;
+    }
+
+    .h2 {
+        font-size: 30px;
+    }
+
 </style>
 
 
@@ -40,30 +48,26 @@
 
     <div class="container">
         <div>
-            <h1>Ayub Farah</h1> 
-            <div>
-                <a href="https://docs.google.com/document/d/1s_ZSxTAYZjTrnart0uc524cu6R3ECRraFxKcMJL7nCw">Resume</a> - 
-                <a href="https://linkedin.com/in/ayubfarah">Linkedin</a> - 
-                <a href="mailto:ayubaf04@gmail.com">Email</a> 
-            </div>
+            <div class="h1">Ayub Farah</div>
             <hr>
         </div>
         <div>
-            <h2>I. About</h2>
+            <p class="h2">I. About</p>
             <p>
-                &emsp; My name is Ayub Farah. I'm currently pursuing a B.S. in Computer Science at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
+                &emsp; My name is Ayub Farah. I'm currently pursuing a B.S.  in Computer Science at The University of Houston. I have an interest in Computer Science and Mathematics, specifically these topics:
             </p>
             <ul>
-                <li>Web Development</li>
-                <li>Linear Algebra</li>
+                <li>Graph Theory</li>
                 <li>Machine Learning</li>
+                <li>Linear Algebra</li>
                 <li>Data Science</li>
+                <li>Number Theory</li>
             </ul>
             <p>
                 &emsp; I am passionate about bridging theoretical knowledge with practical applications and am currently seeking opportunities in research and engineering roles. 
         </div>
         <div>
-            <h2>II. Experience</h2>
+            <p class="h2">II. Experience</p>
             <div>
                 <div>
                     <p>Amazon Web Services | SDE Intern</p>
@@ -91,12 +95,19 @@
             </div>
         </div>
         <div>
-            <h2>III. Projects</h2>
+            <p class="h2">III. Projects</p>
             <ul>
                 <li><a href="https://github.com/ayubf/turms">Turms</a>: An instant messaging service using the WebSocket API.</li>
                 <li><a href="https://github.com/ayubf/wink">Wink</a>: Full-stack social media webapp.</li>
             </ul>
             <p>More on my <a href="https://github.com/ayubf">Github profile.</a></p>
+        </div>
+        <div>
+            <p class="h2">IV. Links</p>
+            <ul>
+                    <li><a href="https://linkedin.com/in/ayubfarah">Linkedin</a></li>
+                    <li><a href="mailto:ayubaf04@gmail.com">Email</a> </li>
+            </ul>
         </div>
     </div>
 
