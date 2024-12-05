@@ -12,17 +12,46 @@
         body {
             font-family: "Garamond";
             font-size: large;
-            max-width: max-content;
-            margin:0 auto; 
-            width: 50vw;
-            height: 100%;
-            padding: 70px 0;
+            max-width: 600px;
+            margin: 0 auto;
+            width: 90%;
+            padding: 20px 0;
             display: flex;
             flex-direction: column;
         }
-        .container
-        {
+
+        .container {
             text-indent: 20px;
+            overflow-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: medium;
+                padding: 10px 0;
+            }
+
+            h1, h3 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                text-indent: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: small;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            p, li, dt {
+                font-size: 0.9em;
+            }
         }
 
     </style>
