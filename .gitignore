@@ -13,3 +13,6 @@ vite.config.ts.timestamp-*
 *.log
 *.out
 *.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
