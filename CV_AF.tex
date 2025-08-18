@@ -1,0 +1,183 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Ayub Farah} \\ \vspace{1pt}
+    \small (346)-622-1183 $|$ \href{mailto:ayubaf04@gmail.com}{\underline{ayubaf04@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ayubfarah}{\underline{linkedin.com/in/ayubfarah}} $|$
+    \href{https://ayubfarah.com}{\underline{ayubfarah.com}} $|$
+    \href{https://github.com/ayubf}{\underline{github.com/ayubf}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston}{Houston, TX}
+      {Bachelor of Science in Mathematics, Computer Science}{(Expected) May 2026} 
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cisco Meraki}
+      {May 2025 -- August 2025}
+      {Software Engineering Intern}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Built a frontend interface for filtering and searching firewall rules in the Cisco Meraki Dashboard using \textbf{TypeScript} and \textbf{Redux}.}
+        \resumeItem{Implemented backend API routes in \textbf{Ruby on Rails} to support advanced rule filtering and search queries.}
+        \resumeItem{Integrated \textbf{OpenAI ChatGPT API} to enable natural language-driven rule searches, allowing users to auto-generate and populate form fields from plain-text descriptions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon Web Services}
+      {May 2024 -- August 2024}
+      {Software Development Engineering Intern}{Santa Clara, CA}
+      \resumeItemListStart
+        \resumeItem{Streamlined user membership deletion management as part of the latest release of AWS Clean Rooms ML.}
+        \resumeItem{Created \textbf{AWS Lambda} handlers, tests, modules, and proxies (with \textbf{Dagger}) in \textbf{Kotlin}. }
+        \resumeItem{Designed and deployed cloud infrastructure with AWS CDK in TypeScript, and wrote unit and integration tests.}
+        \resumeItem{Integerated resources across teams using a relay built with \textbf{AWS DDB Streams, AWS SQS} and 
+        \textbf{AWS SNS}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon Web Services}{June 2023 -- August 2023}
+      {Software Development Engineering Intern}{Santa Clara, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a resource metadata viewer application utilizing \textbf{AWS Lambda} \&\ \textbf{DynamoDB}, enhancing accessibility and efficiency for the engineering team's resource management.}
+        \resumeItem{Implemented role-based access control using \textbf{AWS IAM}, ensuring secure and streamlined access for team members within the resource metadata viewer application.}
+        \resumeItem{Enhanced the team's ticket management application with \textbf{React} and \textbf{Python}, integrating crucial edit functionalities to streamline the ticketing process and improve team productivity.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+  \section{Professional Development}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Google}{July 2022 - August 2022}
+    {Computer Science Summer Institute (CSSI) Scholar}{Remote}
+    \resumeItemListStart
+        \resumeItem{Participated in a 4-week intensive computer science summer program for high-achieving students.}
+        \resumeItem{Completed an introductory project-based HTML/CSS and JavaScript curriculum taught by Google engineers.}
+        \resumeItem{Attended product design, resume development, and software engineering interview workshops.}
+        \resumeItem{Delivered a collaborative final project presentation that included a live demonstration to Google employees and community leaders.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Turms} $|$ \emph{WebSocket API, Go, React, JWT. MongoDB, TypeScript}}{}
+          \resumeItemListStart
+            \resumeItem{Created a real-time messaging app using the \textbf{WebSocket API}.}
+            \resumeItem{Implemented secure user session management with encrypted \textbf{JWTs} for heightened privacy.}
+            \resumeItem{Created a dynamic chat room system with automated lifecycle management using \textbf{Go} and \textbf{MongoDB}.}
+            \resumeItem{Designed a dynamic and responsive frontend using \textbf{TypeScript} and \textbf{React}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, TypeScript, Ruby, Kotlin, Go, PostgreSQL, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, Express, Ruby on Rails, Redux} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Dagger, JUnit, Jest, Rspec}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
